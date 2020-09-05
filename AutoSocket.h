@@ -6,7 +6,7 @@
 /* Example (server): To create a server, you have to:
 1. Create a socket by calling AS_CreateSocket(), the default protocol is TCP(SOCK_STREAM). If you'd like to use UDP, specify SOCK_DGRAM for the type parameter instead.
 
-2. Set the socket address by calling AS_InitSocketAddr(), you can specify a custom port number but the IP should remain 0.
+2. Set the socket address by calling AS_InitSocketAddr(), you can specify a custom port number and an IP address.
 
 3. Bind the socket by calling AS_BindSocket()
 
@@ -16,7 +16,7 @@
 /* Example (Client): To create a client, you have to:
 1. Create a socket by calling AS_CreateSocket(), the default protocol is TCP(SOCK_STREAM). If you'd like to use UDP, specify SOCK_DGRAM for the type parameter instead.
 
-2. Set the socket address by calling AS_InitSocketAddr(), specify a port number and IP address.
+2. Set the socket address by calling AS_InitSocketAddr(), you can specify a custom port number and an IP address.
 
 3. To send data to a specific address, call AS_Sendto(). The AS_Sendto() function sends the input data to a specific address. 
 */
